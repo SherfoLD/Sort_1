@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4D267040290C754B004346B0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D26703F290C754B004346B0 /* main.cpp */; };
+		4DDF1CFD2917DCFE00B3DD91 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DDF1CFC2917DCFE00B3DD91 /* Node.cpp */; };
+		4DDF1D002917DE4800B3DD91 /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DDF1CFE2917DE4800B3DD91 /* List.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +27,10 @@
 /* Begin PBXFileReference section */
 		4D26703C290C754B004346B0 /* Sort_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sort_1; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D26703F290C754B004346B0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Sort_1/main.cpp; sourceTree = SOURCE_ROOT; };
-		4D267048290C7AA2004346B0 /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		4DDF1CFB2917DBEF00B3DD91 /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		4DDF1CFC2917DCFE00B3DD91 /* Node.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		4DDF1CFE2917DE4800B3DD91 /* List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
+		4DDF1CFF2917DE4800B3DD91 /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				4D26703F290C754B004346B0 /* main.cpp */,
-				4D267048290C7AA2004346B0 /* Node.h */,
+				4DDF1CFB2917DBEF00B3DD91 /* Node.h */,
+				4DDF1CFC2917DCFE00B3DD91 /* Node.cpp */,
+				4DDF1CFE2917DE4800B3DD91 /* List.cpp */,
+				4DDF1CFF2917DE4800B3DD91 /* List.h */,
 			);
 			path = Sort_1;
 			sourceTree = "<group>";
@@ -91,7 +99,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					4D26703B290C754B004346B0 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -121,7 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDF1D002917DE4800B3DD91 /* List.cpp in Sources */,
 				4D267040290C754B004346B0 /* main.cpp in Sources */,
+				4DDF1CFD2917DCFE00B3DD91 /* Node.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +171,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -219,6 +230,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -240,7 +252,9 @@
 		4D267044290C754B004346B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,7 +262,9 @@
 		4D267045290C754B004346B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
