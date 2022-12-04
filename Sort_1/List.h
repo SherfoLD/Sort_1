@@ -23,8 +23,6 @@ public:
     void push(int newValue);
     int pop();
     void print();
-    int get();
-    void set();
     void sort();
 };
 
