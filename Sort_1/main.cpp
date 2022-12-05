@@ -7,20 +7,21 @@ int main()
 {
     List list;
     
-    for (int i=0; i<1000000; i++) {
-        list.push(rand());
+    for (int i=0; i<10; i++) {
+        list.push(rand()%100);
     };
-    std::cout << "Original array:\n";
-    //list.print();
     
+    std::cout << "Original array:\n";
+    list.print();
+
     auto start = std::chrono::steady_clock::now();
     
-    list.sort();
+    list.sortForQueue();
     
     auto end = std::chrono::steady_clock::now();
     
     std::cout << "Sorted array:\n";
-    //list.print();
+    list.print();
     
     std::cout<< "Elapsed time: " << std::chrono::duration_cast<std::chrono::milliseconds>(end-start).count() << " ms\n";
 }

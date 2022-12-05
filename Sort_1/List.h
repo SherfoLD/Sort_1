@@ -14,6 +14,7 @@ class List{
 private:
     Node* head;
     Node *sorted;
+    int length;
     
     void insert(Node* insertedNode);
 
@@ -24,6 +25,10 @@ public:
     int pop();
     void print();
     void sort();
+    void sortForQueue();
+    bool isEmpty();
+    int get(int index);
+    void set(int index, int newValue);
 };
 
 
