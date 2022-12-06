@@ -13,12 +13,14 @@
 class List{
 private:
     Node* head;
-    Node *sorted;
+    Node* sorted;
     int length;
     
     void insert(Node* insertedNode);
 
 public:
+    unsigned long long int count;
+    
     List();
     ~List();
     void push(int newValue);
