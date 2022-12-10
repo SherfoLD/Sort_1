@@ -109,21 +109,25 @@ void List::print(){
 }
 
 void List::sort(){
+    
     int j = 0; //+1
     
     for (int i = 1; i < length; i++){ //+2
         j = i; //+1
-        
-        while (get(j) < get(j-1)){ //+5
-            int swap = get(j); //+2
-            set(j, get(j-1)); //+5
+
+        int _j = get(j); int _j1 = get(j-1); //+7
+        while (_j < _j1){ //+5
+            int swap = _j; //+1
+            set(j, _j1); //+3
             set(j-1, swap); //+4
             j = j - 1; //+2
             
             if (j == 0) //+1
                 break;
+            _j = get(j); _j1 = get(j-1); //+7
             count += 19;
         }
+
         count += 3;
     }//+2
     count += 3;

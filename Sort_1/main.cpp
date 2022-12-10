@@ -7,8 +7,8 @@ int main()
 {
     List list;
     
-    srand(time_t(nullptr));
-    for (int i=0; i<10; i++) {
+    srand(time(NULL));
+    for (int i=0; i<100; i++) {
         list.push(rand()%100);
     };
 
